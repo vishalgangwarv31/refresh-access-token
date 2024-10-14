@@ -14,7 +14,7 @@ import { MongooseModule } from '@nestjs/mongoose';
       useFactory: async () => {
         try {
           return {
-            uri: 'mongodb+srv://admin:12345@cluster0.ul6st.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',
+            uri: 'mongodb+srv://admin:<>@cluster0.ul6st.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0',
           };
         } catch (error) {
           console.error('Error connecting to MongoDB:', error);
